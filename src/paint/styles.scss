@@ -1,0 +1,39 @@
+@import './color';
+
+body {
+    min-height: 100vh;
+    background-color: $Dark-Blue;
+}
+
+.root {
+    min-height: 100vh;
+    .board {
+        max-width: 500px;
+        // aspect-ratio: 16/9;
+        min-height: 200px;
+        background-color: $Dark-Grayish-Blue;
+        .hero-title {
+            color: $Neon-Green;
+        }
+        figure {
+            // background-color: yellow;
+            min-height: 120px;
+            .blockquote .quote {
+                font-size: 28px;
+                color: $Light-Cyan;
+            }
+        }
+        .dice-container {
+            width: 50px;
+            aspect-ratio: 1/1;
+            background-color: $Neon-Green;
+            left: 50%;
+            bottom: -25px;
+            transform: translate(-50%);
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0px 0px 30px 5px $Neon-Green;
+            }
+        }
+    }
+}

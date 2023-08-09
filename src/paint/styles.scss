@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 @import './color';
+
+// html {
+//     // font-family: 'Manrope', sans-serif;
+// }
 
 body {
     min-height: 100vh;
@@ -14,6 +19,7 @@ body {
         background-color: $Dark-Grayish-Blue;
         .hero-title {
             color: $Neon-Green;
+            font-family: 'Manrope', sans-serif;
         }
         figure {
             // background-color: yellow;
@@ -21,6 +27,7 @@ body {
             .blockquote .quote {
                 font-size: 28px;
                 color: $Light-Cyan;
+                font-family: 'Manrope', sans-serif;
             }
         }
         .dice-container {
@@ -33,6 +40,17 @@ body {
             cursor: pointer;
             &:hover {
                 box-shadow: 0px 0px 30px 5px $Neon-Green;
+            }
+        }
+    }
+    .attribution {
+        font-family: 'Manrope', sans-serif;
+        a {
+            color: $Light-Cyan;
+            &:hover {
+                color: $Neon-Green;
+                text-decoration: none;
+                transition: .3s;
             }
         }
     }
